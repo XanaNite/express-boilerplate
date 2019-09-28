@@ -4,6 +4,7 @@ describe('App', () =>{
     it('GET / responds with  containing "Hello, world!"', () =>{
         return supertest(app)
             .get('/')
+            .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
             .expect(200, 'Hello, world!');
     });
 });
