@@ -1,4 +1,5 @@
-process.env.TZ = 'UTC' //Timezone set to UTC
+process.env.TZ = 'UTC' 
+//Timezone set to UTC doesnt work on Windows
 process.env.NODE_ENV = 'test'
 
 require('dotenv').config()
